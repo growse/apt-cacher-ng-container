@@ -1,7 +1,8 @@
 # syntax=docker/dockerfile:1
 
-# renovate: datasource=repology depName=debian_12/apt-cacher-ng versioning=loose
 FROM debian:bookworm-20230904-slim
+
+# renovate: datasource=repology depName=debian_12/apt-cacher-ng versioning=loose
 ENV APT_CACHER_NG_VERSION="3.7.4-1+b2"
 RUN --mount=type=cache,target=/var/cache/apt \
     DEBIAN_FRONTEND=noninteractive apt-get update && \
