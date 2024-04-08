@@ -9,4 +9,3 @@ RUN --mount=type=cache,target=/var/cache/apt \
     apt-get install -y apt-cacher-ng=${APT_CACHER_NG_VERSION}
 USER 100
 CMD [ "/usr/sbin/apt-cacher-ng", "-c", "/etc/apt-cacher-ng" ]
-
