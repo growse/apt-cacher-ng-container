@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM debian:bookworm-20240722-slim
+FROM debian:bookworm-20240904-slim
 
 # renovate: datasource=repology depName=debian_12/apt-cacher-ng versioning=loose
 ENV APT_CACHER_NG_VERSION="3.7.4-1+b2"
