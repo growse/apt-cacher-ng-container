@@ -11,7 +11,7 @@
       "matchDatasources": ["docker"],
       "matchPackageNames": ["debian"],
       "versioning": "regex:^bookworm-(?<major>\\d+)-slim$",
-      "autoMerge": true
+      "automerge": true
     }
   ]
 }
